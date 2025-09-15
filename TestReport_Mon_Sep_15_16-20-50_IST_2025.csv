@@ -1,0 +1,8 @@
+Test Name,Status,Expected Result,Actual Result,Error Message,Timestamp
+"Successful Login","PASSED","User should reach home page with 'Activity Streak' text","Home page displayed with Activity Streak","","Mon_Sep_15_16-20-50_IST_2025"
+
+"SUMMARY","","","","",""
+"Total Tests","1","","","",""
+"Passed","1","","","",""
+"Failed","0","","","",""
+"Success Rate","100.0%","","","",""

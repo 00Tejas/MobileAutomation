@@ -1,0 +1,17 @@
+Test Name,Status,Expected Result,Actual Result,Error Message,Timestamp
+"Successful Login","PASSED","User should reach home page with 'Activity Streak' text","Home page displayed with Activity Streak","","Mon_Sep_15_12-46-05_IST_2025"
+"Invalid Email Login","PASSED","App should show error message for invalid email","Error message displayed correctly","","Mon_Sep_15_12-46-05_IST_2025"
+"Invalid Password Login","FAILED","App should show error message for invalid password","Error message not displayed","An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.2', java.version: '24.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [82c9fd7f-26b6-4b4f-acd1-ab6926dcdfc6, findElement {using=xpath, value=//android.widget.Button}]
+Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 82c9fd7f-26b6-4b4f-acd1-ab6926dcdfc6","Mon_Sep_15_12-46-05_IST_2025"
+
+"SUMMARY","","","","",""
+"Total Tests","3","","","",""
+"Passed","2","","","",""
+"Failed","1","","","",""
+"Success Rate","66.66666666666667%","","","",""
