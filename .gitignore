@@ -1,0 +1,29 @@
+# Maven
+target/
+*.jar
+*.war
+*.ear
+
+# Test Reports
+TestReport_*.csv
+TestReport_*.txt
+
+# Log Files
+*.log
+StepLogs_*.txt
+test-execution.log
+
+# IDE Files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Temporary Files
+*.tmp
+*.temp

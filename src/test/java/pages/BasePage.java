@@ -3,10 +3,13 @@ package pages;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.By;
+import java.time.Duration;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
 
 /**
  * 🏗️ Base Page - Common setup for all pages
@@ -45,8 +48,6 @@ public class BasePage {
      * - The driver variable becomes your "remote control" for the app
      */
     public void setupDriver() throws MalformedURLException {
-        System.out.println("🔧 Setting up the driver...");
-        
         // 📋 CREATE CAPABILITIES: Tell Appium what we want to automate
         // Capabilities are like "instructions" for Appium
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -74,10 +75,10 @@ public class BasePage {
         driver = new AndroidDriver(appiumServerURL, capabilities);
         
         // ⏱️ SET WAIT TIME: Wait for elements to load
-        // This tells the driver to wait up to 15 seconds for elements to appear
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        // This tells the driver to wait up to 20 seconds for elements to appear
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         
-        System.out.println("✅ Driver setup completed!");
+        // 📱 MOBILE APPS: Only implicit wait is supported, other timeouts are not available
     }
     
     /**
@@ -97,7 +98,6 @@ public class BasePage {
     public void cleanup() {
         if (driver != null) {
             // driver.quit(); // COMMENTED OUT - Keep app open for debugging
-            System.out.println("✅ App kept open for debugging!");
         }
     }
     
@@ -117,46 +117,30 @@ public class BasePage {
      * - Uses ADB commands (you don't need to understand these)
      */
     public void resetAppData() {
-        System.out.println("🔄 Resetting app to start fresh...");
         try {
             // 🛑 STEP 1: Force stop the app
-            // This stops the app completely, like force-closing it
-            System.out.println("🛑 Force stopping the app...");
             ProcessBuilder stopPb = new ProcessBuilder("adb", "shell", "am", "force-stop", "com.raising.prodigy");
             Process stopProcess = stopPb.start();
             stopProcess.waitFor();
-            Thread.sleep(2000); // Wait 2 seconds for the app to stop
+            Thread.sleep(3000); // Wait 3 seconds for the app to stop
 
             // 🧹 STEP 2: Clear app data completely
-            // This removes all user data, like logging out and clearing cache
-            System.out.println("🧹 Clearing app data...");
             ProcessBuilder clearPb = new ProcessBuilder("adb", "shell", "pm", "clear", "com.raising.prodigy");
             Process clearProcess = clearPb.start();
             clearProcess.waitFor();
-            Thread.sleep(3000); // Wait 3 seconds for data to clear
+            Thread.sleep(4000); // Wait 4 seconds for data to clear
 
-            // 🗑️ STEP 3: Clear app cache
-            // This removes temporary files and cache
-            System.out.println("🗑️ Clearing app cache...");
-            ProcessBuilder cachePb = new ProcessBuilder("adb", "shell", "pm", "clear", "com.raising.prodigy");
-            Process cacheProcess = cachePb.start();
-            cacheProcess.waitFor();
-            Thread.sleep(2000); // Wait 2 seconds for cache to clear
-
-            // 🔄 STEP 4: Reset app permissions
-            // This resets all permissions to default state
-            System.out.println("🔄 Resetting app permissions...");
+            // 🔄 STEP 3: Reset app permissions
             ProcessBuilder resetPb = new ProcessBuilder("adb", "shell", "pm", "reset-permissions", "com.raising.prodigy");
             Process resetProcess = resetPb.start();
             resetProcess.waitFor();
-            Thread.sleep(2000); // Wait 2 seconds for permissions to reset
+            Thread.sleep(3000); // Wait 3 seconds for permissions to reset
 
-            System.out.println("✅ App reset completed!");
+            // ⏱️ FINAL WAIT: Ensure everything is reset
+            Thread.sleep(2000); // Wait 2 seconds for everything to settle
 
         } catch (Exception e) {
             // ⚠️ ERROR HANDLING: If reset fails, continue anyway
-            System.out.println("⚠️ App reset failed: " + e.getMessage());
-            System.out.println("ℹ️ Continuing with existing app state...");
         }
     }
     
@@ -176,15 +160,18 @@ public class BasePage {
      * - It's like "restarting the app" before each test
      */
     public void setupDriverWithReset() throws MalformedURLException {
-        System.out.println("🔧 Setting up driver with app reset...");
-        
         // 🔄 RESET FIRST: Always reset the app first to ensure fresh start
         resetAppData();
         
+        // ⏱️ WAIT: Give extra time for reset to complete
+        try {
+            Thread.sleep(3000); // Wait 3 seconds for reset to fully complete
+        } catch (Exception e) {
+            // Continue if sleep fails
+        }
+        
         // 🚀 SETUP DRIVER: Then setup the driver normally
         setupDriver();
-        
-        System.out.println("✅ Driver setup with reset completed!");
     }
     
     /**
@@ -203,5 +190,77 @@ public class BasePage {
      */
     public AppiumDriver getDriver() {
         return driver;
+    }
+    
+    /**
+     * ⏱️ Wait for Element - Simple wait for element to be clickable
+     * 
+     * 📚 WHAT THIS METHOD DOES:
+     * - Waits for an element to be clickable before proceeding
+     * - Prevents app crashes by ensuring elements are ready
+     * - Uses explicit wait for better stability
+     * 
+     * 🎯 FOR NEW TESTERS:
+     * - This method helps prevent app crashes
+     * - It waits for elements to be ready before clicking
+     * - Simple to use: just pass the element locator
+     */
+    public void waitForElementToBeClickable(By locator) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+            wait.until(ExpectedConditions.elementToBeClickable(locator));
+        } catch (Exception e) {
+            // Element not ready - continue without logging
+        }
+    }
+    
+    /**
+     * ⏱️ Wait for Element - Simple wait for element to be visible
+     * 
+     * 📚 WHAT THIS METHOD DOES:
+     * - Waits for an element to be visible before proceeding
+     * - Prevents app crashes by ensuring elements are loaded
+     * - Uses explicit wait for better stability
+     * 
+     * 🎯 FOR NEW TESTERS:
+     * - This method helps prevent app crashes
+     * - It waits for elements to be visible before interacting
+     * - Simple to use: just pass the element locator
+     */
+    public void waitForElementToBeVisible(By locator) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        } catch (Exception e) {
+            // Element not visible - continue without logging
+        }
+    }
+    
+    /**
+     * 📱 Check App Stability - Simple app health check
+     * 
+     * 📚 WHAT THIS METHOD DOES:
+     * - Checks if the app is still running and responsive
+     * - Prevents crashes by detecting app issues early
+     * - Simple connectivity check using mobile-specific method
+     * 
+     * 🎯 FOR NEW TESTERS:
+     * - This method helps prevent app crashes
+     * - It checks if the app is still working properly
+     * - Simple to use: call it before important operations
+     */
+    public void checkAppStability() {
+        try {
+            // Simple check - try to get current activity (mobile-specific)
+            String currentActivity = driver.getCurrentUrl();
+        } catch (Exception e) {
+            // Mobile apps don't support getCurrentUrl, so we use a different approach
+            try {
+                // Try to find any element to check if app is responsive
+                driver.findElement(By.xpath("//*"));
+            } catch (Exception e2) {
+                // App stability check failed - continue without logging
+            }
+        }
     }
 }

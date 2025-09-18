@@ -1,18 +1,18 @@
-16:25:01.404 - === STARTING TEST: Successful Login ===
-16:25:06.924 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
-16:25:06.925 -    📋 Details: Element found and clicked successfully
-16:25:10.399 - ✅ STEP 2/6: Click button on second screen - SUCCESS
-16:25:10.400 -    📋 Details: Button found and clicked successfully
-16:25:13.472 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
-16:25:13.473 -    📋 Details: Both elements found and clicked successfully
-16:25:18.388 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
-16:25:18.390 -    📋 Details: Email entered and sign in button clicked successfully
-16:25:21.632 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
-16:25:21.632 -    📋 Details: Login with Password button found and clicked successfully
-16:25:25.338 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
-16:25:25.339 -    📋 Details: Password entered and sign in button clicked successfully
-16:25:27.371 - ✅ STEP VALIDATION: Check home page - SUCCESS
-16:25:27.371 -    📋 Details: Home page displayed with Activity Streak: Activity Streak
+11:42:33.793 - === STARTING TEST: Successful Login ===
+11:42:40.577 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+11:42:40.581 -    📋 Details: Element found and clicked successfully
+11:42:44.709 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+11:42:44.711 -    📋 Details: Button found and clicked successfully
+11:42:47.804 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+11:42:47.806 -    📋 Details: Both elements found and clicked successfully
+11:42:52.474 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+11:42:52.478 -    📋 Details: Email entered and sign in button clicked successfully
+11:43:00.611 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+11:43:00.615 -    📋 Details: Login with Password button found and clicked successfully
+11:43:04.430 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+11:43:04.431 -    📋 Details: Password entered and sign in button clicked successfully
+11:43:06.594 - ✅ STEP VALIDATION: Check home page - SUCCESS
+11:43:06.595 -    📋 Details: Home page displayed with Activity Streak: Activity Streak
 0 Week Streak
 Mon
 Tue
@@ -21,4 +21,754 @@ Thu
 Fri
 Sat
 Sun
-16:25:27.371 - === TEST COMPLETED: Successful Login - PASSED ===
+11:43:06.598 - === TEST COMPLETED: Successful Login - PASSED ===
+11:43:12.516 - === STARTING TEST: Invalid Email Login ===
+11:43:18.143 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+11:43:18.151 -    📋 Details: Element found and clicked successfully
+11:43:21.656 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+11:43:21.660 -    📋 Details: Button found and clicked successfully
+11:43:24.761 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+11:43:24.765 -    📋 Details: Both elements found and clicked successfully
+11:43:29.746 - ✅ STEP 4/6: Enter INVALID email and click 'Sign in' - SUCCESS
+11:43:29.748 -    📋 Details: Invalid email entered and sign in button clicked successfully
+11:43:33.428 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+11:43:33.429 -    📋 Details: Login with Password button found and clicked successfully
+11:43:37.660 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+11:43:37.666 -    📋 Details: Password entered and sign in button clicked successfully
+11:43:37.738 - ✅ STEP VALIDATION: Check error message - SUCCESS
+11:43:37.740 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+11:43:37.743 - === TEST COMPLETED: Invalid Email Login - PASSED ===
+11:43:43.262 - === STARTING TEST: Invalid Password Login ===
+11:43:49.426 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+11:43:49.431 -    📋 Details: Element found and clicked successfully
+11:43:52.931 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+11:43:52.934 -    📋 Details: Button found and clicked successfully
+11:43:56.042 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+11:43:56.045 -    📋 Details: Both elements found and clicked successfully
+11:44:01.081 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+11:44:01.084 -    📋 Details: Email entered and sign in button clicked successfully
+11:44:04.839 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+11:44:04.842 -    📋 Details: Login with Password button found and clicked successfully
+11:44:09.737 - ✅ STEP 6/6: Enter INVALID password and click 'Sign in' - SUCCESS
+11:44:09.740 -    📋 Details: Invalid password entered and sign in button clicked successfully
+11:44:29.838 - ❌ STEP VALIDATION: Check error message - FAILED
+11:44:29.840 -    🔍 Error Details: Error: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ce812b90-ff0d-406e-83de-4f448a48c8e6, findElement {using=xpath, value=//android.view.View[@content-desc="The supplied auth credential is incorrect, malformed or has expired."]}]
+Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: ce812b90-ff0d-406e-83de-4f448a48c8e6
+11:44:40.595 - === STARTING TEST: Successful Login ===
+11:44:47.466 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+11:44:47.469 -    📋 Details: Element found and clicked successfully
+11:44:51.572 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+11:44:51.574 -    📋 Details: Button found and clicked successfully
+11:44:54.661 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+11:44:54.666 -    📋 Details: Both elements found and clicked successfully
+11:44:59.592 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+11:44:59.594 -    📋 Details: Email entered and sign in button clicked successfully
+11:45:02.868 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+11:45:02.870 -    📋 Details: Login with Password button found and clicked successfully
+11:45:06.650 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+11:45:06.651 -    📋 Details: Password entered and sign in button clicked successfully
+11:45:10.310 - ✅ STEP VALIDATION: Check home page - SUCCESS
+11:45:10.311 -    📋 Details: Home page displayed with Activity Streak: Activity Streak
+0 Week Streak
+Mon
+Tue
+Wed
+Thu
+Fri
+Sat
+Sun
+11:45:10.316 - === TEST COMPLETED: Successful Login - PASSED ===
+11:49:32.610 - === STARTING TEST: Invalid Password Login ===
+11:49:38.093 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+11:49:38.094 -    📋 Details: Element found and clicked successfully
+11:49:41.591 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+11:49:41.591 -    📋 Details: Button found and clicked successfully
+11:49:44.681 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+11:49:44.682 -    📋 Details: Both elements found and clicked successfully
+11:49:49.216 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+11:49:49.217 -    📋 Details: Email entered and sign in button clicked successfully
+11:49:52.485 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+11:49:52.486 -    📋 Details: Login with Password button found and clicked successfully
+11:49:56.728 - ✅ STEP 6/6: Enter INVALID password and click 'Sign in' - SUCCESS
+11:49:56.729 -    📋 Details: Invalid password entered and sign in button clicked successfully
+11:49:56.807 - ✅ STEP VALIDATION: Check error message - SUCCESS
+11:49:56.807 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+11:49:56.807 - === TEST COMPLETED: Invalid Password Login - PASSED ===
+12:04:36.059 - === STARTING TEST: Invalid Password Login ===
+12:04:51.379 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+12:04:51.380 -    📋 Details: Element found and clicked successfully
+12:04:53.982 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+12:04:53.982 -    📋 Details: Button found and clicked successfully
+12:04:57.053 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+12:04:57.054 -    📋 Details: Both elements found and clicked successfully
+12:05:01.700 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+12:05:01.701 -    📋 Details: Email entered and sign in button clicked successfully
+12:05:09.915 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+12:05:09.916 -    📋 Details: Login with Password button found and clicked successfully
+12:05:14.633 - ✅ STEP 6/6: Enter INVALID password and click 'Sign in' - SUCCESS
+12:05:14.634 -    📋 Details: Invalid password entered and sign in button clicked successfully
+12:05:14.707 - ✅ STEP VALIDATION: Check error message - SUCCESS
+12:05:14.707 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+12:05:14.708 - === TEST COMPLETED: Invalid Password Login - PASSED ===
+12:18:54.320 - === STARTING TEST: Successful Login ===
+12:19:01.049 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+12:19:01.052 -    📋 Details: Element found and clicked successfully
+12:19:05.147 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+12:19:05.149 -    📋 Details: Button found and clicked successfully
+12:19:08.220 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+12:19:08.223 -    📋 Details: Both elements found and clicked successfully
+12:19:13.159 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+12:19:13.161 -    📋 Details: Email entered and sign in button clicked successfully
+12:19:16.427 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+12:19:16.429 -    📋 Details: Login with Password button found and clicked successfully
+12:19:20.217 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+12:19:20.218 -    📋 Details: Password entered and sign in button clicked successfully
+12:19:23.257 - ✅ STEP VALIDATION: Check home page - SUCCESS
+12:19:23.258 -    📋 Details: Home page displayed with Activity Streak: Activity Streak
+0 Week Streak
+Mon
+Tue
+Wed
+Thu
+Fri
+Sat
+Sun
+12:19:23.259 - === TEST COMPLETED: Successful Login - PASSED ===
+12:19:28.509 - === STARTING TEST: Invalid Email Login ===
+12:19:33.978 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+12:19:33.979 -    📋 Details: Element found and clicked successfully
+12:19:37.480 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+12:19:37.484 -    📋 Details: Button found and clicked successfully
+12:19:40.585 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+12:19:40.598 -    📋 Details: Both elements found and clicked successfully
+12:19:45.567 - ✅ STEP 4/6: Enter INVALID email and click 'Sign in' - SUCCESS
+12:19:45.571 -    📋 Details: Invalid email entered and sign in button clicked successfully
+12:19:48.817 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+12:19:48.819 -    📋 Details: Login with Password button found and clicked successfully
+12:19:53.051 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+12:19:53.056 -    📋 Details: Password entered and sign in button clicked successfully
+12:19:53.123 - ✅ STEP VALIDATION: Check error message - SUCCESS
+12:19:53.132 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+12:19:53.136 - === TEST COMPLETED: Invalid Email Login - PASSED ===
+12:19:58.283 - === STARTING TEST: Invalid Password Login ===
+12:20:03.858 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+12:20:03.861 -    📋 Details: Element found and clicked successfully
+12:20:07.362 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+12:20:07.368 -    📋 Details: Button found and clicked successfully
+12:20:10.448 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+12:20:10.450 -    📋 Details: Both elements found and clicked successfully
+12:20:14.935 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+12:20:14.938 -    📋 Details: Email entered and sign in button clicked successfully
+12:20:18.185 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+12:20:18.186 -    📋 Details: Login with Password button found and clicked successfully
+12:20:22.343 - ✅ STEP 6/6: Enter INVALID password and click 'Sign in' - SUCCESS
+12:20:22.348 -    📋 Details: Invalid password entered and sign in button clicked successfully
+12:20:22.900 - ✅ STEP VALIDATION: Check error message - SUCCESS
+12:20:22.901 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+12:20:22.904 - === TEST COMPLETED: Invalid Password Login - PASSED ===
+12:20:32.943 - === STARTING TEST: Successful Login ===
+12:20:40.292 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+12:20:40.294 -    📋 Details: Element found and clicked successfully
+12:20:44.350 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+12:20:44.351 -    📋 Details: Button found and clicked successfully
+12:20:47.397 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+12:20:47.399 -    📋 Details: Both elements found and clicked successfully
+12:20:52.317 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+12:20:52.318 -    📋 Details: Email entered and sign in button clicked successfully
+12:20:56.188 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+12:20:56.191 -    📋 Details: Login with Password button found and clicked successfully
+12:21:16.300 - ❌ STEP 6/6: Enter password and click 'Sign in' - FAILED
+12:21:16.301 -    🔍 Error Details: Error: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [b32c7076-6c1d-4d69-8e09-87c3988e1bb7, findElement {using=xpath, value=//android.widget.EditText}]
+Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: b32c7076-6c1d-4d69-8e09-87c3988e1bb7
+15:14:03.699 - === STARTING TEST: Successful Login ===
+15:14:10.803 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:14:10.809 -    📋 Details: Element found and clicked successfully
+15:14:14.906 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:14:14.906 -    📋 Details: Button found and clicked successfully
+15:14:17.959 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:14:17.961 -    📋 Details: Both elements found and clicked successfully
+15:14:40.609 - ❌ STEP 4/6: Enter email and click 'Sign in' - FAILED
+15:14:40.610 -    🔍 Error Details: Error: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [6250ce32-fd26-4b8a-98f4-4569044b4d68, findElement {using=xpath, value=//android.widget.Button[@content-desc="Sign in"]}]
+Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 6250ce32-fd26-4b8a-98f4-4569044b4d68
+15:14:45.763 - === STARTING TEST: Invalid Email Login ===
+15:14:51.448 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:14:51.450 -    📋 Details: Element found and clicked successfully
+15:14:54.963 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:14:54.965 -    📋 Details: Button found and clicked successfully
+15:14:58.094 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:14:58.096 -    📋 Details: Both elements found and clicked successfully
+15:15:02.928 - ✅ STEP 4/6: Enter INVALID email and click 'Sign in' - SUCCESS
+15:15:02.931 -    📋 Details: Invalid email entered and sign in button clicked successfully
+15:15:09.785 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:15:09.793 -    📋 Details: Login with Password button found and clicked successfully
+15:15:13.900 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+15:15:13.905 -    📋 Details: Password entered and sign in button clicked successfully
+15:15:14.001 - ✅ STEP VALIDATION: Check error message - SUCCESS
+15:15:14.003 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+15:15:14.007 - === TEST COMPLETED: Invalid Email Login - PASSED ===
+15:15:19.439 - === STARTING TEST: Invalid Password Login ===
+15:15:25.099 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:15:25.102 -    📋 Details: Element found and clicked successfully
+15:15:28.569 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:15:28.575 -    📋 Details: Button found and clicked successfully
+15:15:31.666 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:15:31.667 -    📋 Details: Both elements found and clicked successfully
+15:15:36.198 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+15:15:36.202 -    📋 Details: Email entered and sign in button clicked successfully
+15:15:39.441 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:15:39.443 -    📋 Details: Login with Password button found and clicked successfully
+15:15:43.183 - ✅ STEP 6/6: Enter INVALID password and click 'Sign in' - SUCCESS
+15:15:43.188 -    📋 Details: Invalid password entered and sign in button clicked successfully
+15:15:43.279 - ✅ STEP VALIDATION: Check error message - SUCCESS
+15:15:43.281 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+15:15:43.283 - === TEST COMPLETED: Invalid Password Login - PASSED ===
+15:15:54.005 - === STARTING TEST: Successful Login ===
+15:16:01.409 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:16:01.410 -    📋 Details: Element found and clicked successfully
+15:16:05.505 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:16:05.507 -    📋 Details: Button found and clicked successfully
+15:16:08.578 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:16:08.580 -    📋 Details: Both elements found and clicked successfully
+15:16:13.312 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+15:16:13.318 -    📋 Details: Email entered and sign in button clicked successfully
+15:16:17.124 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:16:17.126 -    📋 Details: Login with Password button found and clicked successfully
+15:16:37.201 - ❌ STEP 6/6: Enter password and click 'Sign in' - FAILED
+15:16:37.205 -    🔍 Error Details: Error: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [7e54b66d-f8d9-4e34-b0dc-41b9db15f28a, findElement {using=xpath, value=//android.widget.EditText}]
+Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7e54b66d-f8d9-4e34-b0dc-41b9db15f28a
+15:27:58.502 - === STARTING TEST: Invalid Password Login ===
+15:28:03.879 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:28:03.879 -    📋 Details: Element found and clicked successfully
+15:28:06.484 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:28:06.484 -    📋 Details: Button found and clicked successfully
+15:28:09.536 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:28:09.537 -    📋 Details: Both elements found and clicked successfully
+15:28:14.020 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+15:28:14.021 -    📋 Details: Email entered and sign in button clicked successfully
+15:28:22.127 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:28:22.127 -    📋 Details: Login with Password button found and clicked successfully
+15:28:26.273 - ✅ STEP 6/6: Enter INVALID password and click 'Sign in' - SUCCESS
+15:28:26.273 -    📋 Details: Invalid password entered and sign in button clicked successfully
+15:28:26.347 - ✅ STEP VALIDATION: Check error message - SUCCESS
+15:28:26.347 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+15:28:26.348 - === TEST COMPLETED: Invalid Password Login - PASSED ===
+15:30:58.584 - === STARTING TEST: Successful Login ===
+15:31:10.715 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:31:10.719 -    📋 Details: Element found and clicked successfully
+15:31:14.819 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:31:14.820 -    📋 Details: Button found and clicked successfully
+15:31:17.857 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:31:17.860 -    📋 Details: Both elements found and clicked successfully
+15:31:22.351 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+15:31:22.353 -    📋 Details: Email entered and sign in button clicked successfully
+15:31:25.653 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:31:25.656 -    📋 Details: Login with Password button found and clicked successfully
+15:31:29.437 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+15:31:29.438 -    📋 Details: Password entered and sign in button clicked successfully
+15:31:31.389 - ✅ STEP VALIDATION: Check home page - SUCCESS
+15:31:31.389 -    📋 Details: Home page displayed with Activity Streak: Activity Streak
+0 Week Streak
+Mon
+Tue
+Wed
+Thu
+Fri
+Sat
+Sun
+15:31:31.391 - === TEST COMPLETED: Successful Login - PASSED ===
+15:31:36.997 - === STARTING TEST: Invalid Email Login ===
+15:31:42.355 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:31:42.359 -    📋 Details: Element found and clicked successfully
+15:31:45.837 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:31:45.841 -    📋 Details: Button found and clicked successfully
+15:31:48.961 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:31:48.962 -    📋 Details: Both elements found and clicked successfully
+15:31:54.390 - ✅ STEP 4/6: Enter INVALID email and click 'Sign in' - SUCCESS
+15:31:54.393 -    📋 Details: Invalid email entered and sign in button clicked successfully
+15:32:02.057 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:32:02.061 -    📋 Details: Login with Password button found and clicked successfully
+15:32:06.237 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+15:32:06.242 -    📋 Details: Password entered and sign in button clicked successfully
+15:32:06.323 - ✅ STEP VALIDATION: Check error message - SUCCESS
+15:32:06.326 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+15:32:06.329 - === TEST COMPLETED: Invalid Email Login - PASSED ===
+15:32:11.635 - === STARTING TEST: Invalid Password Login ===
+15:32:17.683 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:32:17.689 -    📋 Details: Element found and clicked successfully
+15:32:21.181 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:32:21.187 -    📋 Details: Button found and clicked successfully
+15:32:23.400 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:32:23.402 -    📋 Details: Both elements found and clicked successfully
+15:32:27.905 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+15:32:27.907 -    📋 Details: Email entered and sign in button clicked successfully
+15:32:31.486 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:32:31.488 -    📋 Details: Login with Password button found and clicked successfully
+15:32:51.589 - ❌ STEP 6/6: Enter INVALID password and click 'Sign in' - FAILED
+15:32:51.592 -    🔍 Error Details: Error: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [0225fafc-fd12-4779-b818-7d50e111ebc2, findElement {using=xpath, value=//android.widget.EditText}]
+Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 0225fafc-fd12-4779-b818-7d50e111ebc2
+15:33:01.829 - === STARTING TEST: Successful Login ===
+15:33:08.357 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:33:08.359 -    📋 Details: Element found and clicked successfully
+15:33:48.632 - ❌ STEP 2/6: Click button on second screen - FAILED
+15:33:48.637 -    🔍 Error Details: Error: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [07dc9fe8-197e-4818-8083-90e8478ea694, findElement {using=xpath, value=//android.widget.Button}]
+Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 07dc9fe8-197e-4818-8083-90e8478ea694
+15:35:10.441 - === STARTING TEST: Invalid Password Login ===
+15:35:26.285 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:35:26.286 -    📋 Details: Element found and clicked successfully
+15:35:28.885 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:35:28.885 -    📋 Details: Button found and clicked successfully
+15:35:31.938 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:35:31.939 -    📋 Details: Both elements found and clicked successfully
+15:35:36.886 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+15:35:36.887 -    📋 Details: Email entered and sign in button clicked successfully
+15:35:40.126 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:35:40.127 -    📋 Details: Login with Password button found and clicked successfully
+15:35:44.304 - ✅ STEP 6/6: Enter INVALID password and click 'Sign in' - SUCCESS
+15:35:44.305 -    📋 Details: Invalid password entered and sign in button clicked successfully
+15:35:44.373 - ✅ STEP VALIDATION: Check error message - SUCCESS
+15:35:44.373 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+15:35:44.374 - === TEST COMPLETED: Invalid Password Login - PASSED ===
+15:37:21.919 - === STARTING TEST: Successful Login ===
+15:37:33.864 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:37:33.867 -    📋 Details: Element found and clicked successfully
+15:37:37.957 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:37:37.958 -    📋 Details: Button found and clicked successfully
+15:37:41.025 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:37:41.028 -    📋 Details: Both elements found and clicked successfully
+15:37:45.799 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+15:37:45.800 -    📋 Details: Email entered and sign in button clicked successfully
+15:37:49.070 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:37:49.072 -    📋 Details: Login with Password button found and clicked successfully
+15:37:53.294 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+15:37:53.295 -    📋 Details: Password entered and sign in button clicked successfully
+15:37:56.465 - ✅ STEP VALIDATION: Check home page - SUCCESS
+15:37:56.465 -    📋 Details: Home page displayed with Activity Streak: Activity Streak
+0 Week Streak
+Mon
+Tue
+Wed
+Thu
+Fri
+Sat
+Sun
+15:37:56.466 - === TEST COMPLETED: Successful Login - PASSED ===
+15:38:02.184 - === STARTING TEST: Invalid Email Login ===
+15:38:07.757 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:38:07.763 -    📋 Details: Element found and clicked successfully
+15:38:11.248 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:38:11.250 -    📋 Details: Button found and clicked successfully
+15:38:14.340 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:38:14.343 -    📋 Details: Both elements found and clicked successfully
+15:38:18.823 - ✅ STEP 4/6: Enter INVALID email and click 'Sign in' - SUCCESS
+15:38:18.825 -    📋 Details: Invalid email entered and sign in button clicked successfully
+15:38:22.088 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:38:22.090 -    📋 Details: Login with Password button found and clicked successfully
+15:38:26.259 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+15:38:26.261 -    📋 Details: Password entered and sign in button clicked successfully
+15:38:26.328 - ✅ STEP VALIDATION: Check error message - SUCCESS
+15:38:26.335 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+15:38:26.340 - === TEST COMPLETED: Invalid Email Login - PASSED ===
+15:38:31.773 - === STARTING TEST: Invalid Password Login ===
+15:38:37.469 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:38:37.472 -    📋 Details: Element found and clicked successfully
+15:38:40.984 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:38:40.989 -    📋 Details: Button found and clicked successfully
+15:38:44.369 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:38:44.374 -    📋 Details: Both elements found and clicked successfully
+15:38:48.861 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+15:38:48.862 -    📋 Details: Email entered and sign in button clicked successfully
+15:38:52.128 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:38:52.132 -    📋 Details: Login with Password button found and clicked successfully
+15:38:55.885 - ✅ STEP 6/6: Enter INVALID password and click 'Sign in' - SUCCESS
+15:38:55.887 -    📋 Details: Invalid password entered and sign in button clicked successfully
+15:38:55.962 - ✅ STEP VALIDATION: Check error message - SUCCESS
+15:38:55.963 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+15:38:55.965 - === TEST COMPLETED: Invalid Password Login - PASSED ===
+15:39:06.266 - === STARTING TEST: Successful Login ===
+15:39:13.622 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:39:13.623 -    📋 Details: Element found and clicked successfully
+15:39:17.711 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:39:17.713 -    📋 Details: Button found and clicked successfully
+15:39:20.769 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:39:20.771 -    📋 Details: Both elements found and clicked successfully
+15:39:25.725 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+15:39:25.728 -    📋 Details: Email entered and sign in button clicked successfully
+15:39:29.406 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:39:29.409 -    📋 Details: Login with Password button found and clicked successfully
+15:39:49.515 - ❌ STEP 6/6: Enter password and click 'Sign in' - FAILED
+15:39:49.517 -    🔍 Error Details: Error: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [85f15114-6f86-4dd4-ab92-e4375cd4a1ca, findElement {using=xpath, value=//android.widget.EditText}]
+Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 85f15114-6f86-4dd4-ab92-e4375cd4a1ca
+15:41:07.179 - === STARTING TEST: Successful Login ===
+15:41:19.369 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:41:19.373 -    📋 Details: Element found and clicked successfully
+15:41:23.483 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:41:23.487 -    📋 Details: Button found and clicked successfully
+15:41:26.558 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:41:26.559 -    📋 Details: Both elements found and clicked successfully
+15:41:31.599 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+15:41:31.601 -    📋 Details: Email entered and sign in button clicked successfully
+15:41:39.138 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:41:39.142 -    📋 Details: Login with Password button found and clicked successfully
+15:41:43.307 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+15:41:43.308 -    📋 Details: Password entered and sign in button clicked successfully
+15:41:44.795 - ✅ STEP VALIDATION: Check home page - SUCCESS
+15:41:44.796 -    📋 Details: Home page displayed with Activity Streak: Activity Streak
+0 Week Streak
+Mon
+Tue
+Wed
+Thu
+Fri
+Sat
+Sun
+15:41:44.797 - === TEST COMPLETED: Successful Login - PASSED ===
+15:41:50.514 - === STARTING TEST: Invalid Email Login ===
+15:41:56.159 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:41:56.163 -    📋 Details: Element found and clicked successfully
+15:41:59.639 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:41:59.643 -    📋 Details: Button found and clicked successfully
+15:42:02.746 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:42:02.752 -    📋 Details: Both elements found and clicked successfully
+15:42:07.226 - ✅ STEP 4/6: Enter INVALID email and click 'Sign in' - SUCCESS
+15:42:07.232 -    📋 Details: Invalid email entered and sign in button clicked successfully
+15:42:10.507 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:42:10.512 -    📋 Details: Login with Password button found and clicked successfully
+15:42:13.809 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+15:42:13.813 -    📋 Details: Password entered and sign in button clicked successfully
+15:42:13.886 - ✅ STEP VALIDATION: Check error message - SUCCESS
+15:42:13.892 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+15:42:13.896 - === TEST COMPLETED: Invalid Email Login - PASSED ===
+15:42:19.367 - === STARTING TEST: Invalid Password Login ===
+15:42:25.083 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:42:25.085 -    📋 Details: Element found and clicked successfully
+15:42:28.583 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:42:28.585 -    📋 Details: Button found and clicked successfully
+15:42:31.676 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:42:31.682 -    📋 Details: Both elements found and clicked successfully
+15:42:36.700 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+15:42:36.701 -    📋 Details: Email entered and sign in button clicked successfully
+15:42:39.977 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:42:39.979 -    📋 Details: Login with Password button found and clicked successfully
+15:42:44.287 - ✅ STEP 6/6: Enter INVALID password and click 'Sign in' - SUCCESS
+15:42:44.289 -    📋 Details: Invalid password entered and sign in button clicked successfully
+15:42:44.361 - ✅ STEP VALIDATION: Check error message - SUCCESS
+15:42:44.361 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+15:42:44.363 - === TEST COMPLETED: Invalid Password Login - PASSED ===
+15:42:54.750 - === STARTING TEST: Successful Login ===
+15:43:02.294 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:43:02.296 -    📋 Details: Element found and clicked successfully
+15:43:06.388 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:43:06.389 -    📋 Details: Button found and clicked successfully
+15:43:09.437 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:43:09.440 -    📋 Details: Both elements found and clicked successfully
+15:43:14.428 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+15:43:14.429 -    📋 Details: Email entered and sign in button clicked successfully
+15:43:34.513 - ❌ STEP 5/6: Click 'Login with Password' - FAILED
+15:43:34.514 -    🔍 Error Details: Error: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [638c317b-4d51-430e-b00f-773e259c755b, findElement {using=xpath, value=//android.widget.Button[@content-desc="Login with Password"]}]
+Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 638c317b-4d51-430e-b00f-773e259c755b
+15:45:48.129 - === STARTING TEST: Successful Login ===
+15:45:55.214 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:45:55.218 -    📋 Details: Element found and clicked successfully
+15:45:59.311 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:45:59.313 -    📋 Details: Button found and clicked successfully
+15:46:02.361 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:46:02.364 -    📋 Details: Both elements found and clicked successfully
+15:46:07.153 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+15:46:07.155 -    📋 Details: Email entered and sign in button clicked successfully
+15:46:10.424 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:46:10.426 -    📋 Details: Login with Password button found and clicked successfully
+15:46:14.180 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+15:46:14.181 -    📋 Details: Password entered and sign in button clicked successfully
+15:46:15.933 - ✅ STEP VALIDATION: Check home page - SUCCESS
+15:46:15.934 -    📋 Details: Home page displayed with Activity Streak: Activity Streak
+0 Week Streak
+Mon
+Tue
+Wed
+Thu
+Fri
+Sat
+Sun
+15:46:15.935 - === TEST COMPLETED: Successful Login - PASSED ===
+15:46:21.790 - === STARTING TEST: Invalid Email Login ===
+15:46:27.363 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:46:27.370 -    📋 Details: Element found and clicked successfully
+15:46:30.862 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:46:30.866 -    📋 Details: Button found and clicked successfully
+15:46:33.966 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:46:33.970 -    📋 Details: Both elements found and clicked successfully
+15:46:38.415 - ✅ STEP 4/6: Enter INVALID email and click 'Sign in' - SUCCESS
+15:46:38.416 -    📋 Details: Invalid email entered and sign in button clicked successfully
+15:46:41.654 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:46:41.656 -    📋 Details: Login with Password button found and clicked successfully
+15:46:45.919 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+15:46:45.923 -    📋 Details: Password entered and sign in button clicked successfully
+15:46:46.000 - ✅ STEP VALIDATION: Check error message - SUCCESS
+15:46:46.008 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+15:46:46.012 - === TEST COMPLETED: Invalid Email Login - PASSED ===
+15:46:51.209 - === STARTING TEST: Invalid Password Login ===
+15:46:56.945 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:46:56.948 -    📋 Details: Element found and clicked successfully
+15:46:59.547 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:46:59.549 -    📋 Details: Button found and clicked successfully
+15:47:02.614 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:47:02.620 -    📋 Details: Both elements found and clicked successfully
+15:47:07.146 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+15:47:07.148 -    📋 Details: Email entered and sign in button clicked successfully
+15:47:10.374 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:47:10.375 -    📋 Details: Login with Password button found and clicked successfully
+15:47:14.582 - ✅ STEP 6/6: Enter INVALID password and click 'Sign in' - SUCCESS
+15:47:14.584 -    📋 Details: Invalid password entered and sign in button clicked successfully
+15:47:14.654 - ✅ STEP VALIDATION: Check error message - SUCCESS
+15:47:14.654 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+15:47:14.655 - === TEST COMPLETED: Invalid Password Login - PASSED ===
+15:47:25.031 - === STARTING TEST: Successful Login ===
+15:47:32.312 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:47:32.314 -    📋 Details: Element found and clicked successfully
+15:47:36.366 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:47:36.368 -    📋 Details: Button found and clicked successfully
+15:47:39.411 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:47:39.417 -    📋 Details: Both elements found and clicked successfully
+15:47:44.366 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+15:47:44.369 -    📋 Details: Email entered and sign in button clicked successfully
+15:47:47.608 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:47:47.609 -    📋 Details: Login with Password button found and clicked successfully
+15:48:07.695 - ❌ STEP 6/6: Enter password and click 'Sign in' - FAILED
+15:48:07.696 -    🔍 Error Details: Error: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ed412ee0-4e8c-45c2-aefa-f03ae9ddd781, findElement {using=xpath, value=//android.widget.EditText}]
+Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: ed412ee0-4e8c-45c2-aefa-f03ae9ddd781
+15:53:58.900 - === STARTING TEST: Invalid Password Login ===
+15:54:09.243 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+15:54:09.245 -    📋 Details: Element found and clicked successfully
+15:54:13.192 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+15:54:13.193 -    📋 Details: Button found and clicked successfully
+15:54:16.259 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+15:54:16.261 -    📋 Details: Both elements found and clicked successfully
+15:54:20.734 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+15:54:20.734 -    📋 Details: Email entered and sign in button clicked successfully
+15:54:28.742 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+15:54:28.743 -    📋 Details: Login with Password button found and clicked successfully
+15:54:33.242 - ✅ STEP 6/6: Enter INVALID password and click 'Sign in' - SUCCESS
+15:54:33.243 -    📋 Details: Invalid password entered and sign in button clicked successfully
+15:54:33.314 - ✅ STEP VALIDATION: Check error message - SUCCESS
+15:54:33.314 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+15:54:33.315 - === TEST COMPLETED: Invalid Password Login - PASSED ===
+16:31:46.149 - === STARTING TEST: Invalid Password Login ===
+16:31:56.691 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+16:31:56.693 -    📋 Details: Element found and clicked successfully
+16:32:00.189 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+16:32:00.192 -    📋 Details: Button found and clicked successfully
+16:32:03.278 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+16:32:03.279 -    📋 Details: Both elements found and clicked successfully
+16:32:07.952 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+16:32:07.953 -    📋 Details: Email entered and sign in button clicked successfully
+16:32:11.214 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+16:32:11.214 -    📋 Details: Login with Password button found and clicked successfully
+16:32:14.945 - ✅ STEP 6/6: Enter INVALID password and click 'Sign in' - SUCCESS
+16:32:14.947 -    📋 Details: Invalid password entered and sign in button clicked successfully
+16:32:15.022 - ✅ STEP VALIDATION: Check error message - SUCCESS
+16:32:15.022 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+16:32:15.023 - === TEST COMPLETED: Invalid Password Login - PASSED ===
+16:38:24.012 - === STARTING TEST: Successful Login ===
+16:38:38.481 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+16:38:38.489 -    📋 Details: Element found and clicked successfully
+16:38:42.608 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+16:38:42.609 -    📋 Details: Button found and clicked successfully
+16:38:45.675 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+16:38:45.677 -    📋 Details: Both elements found and clicked successfully
+16:38:50.862 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+16:38:50.863 -    📋 Details: Email entered and sign in button clicked successfully
+16:38:58.443 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+16:38:58.446 -    📋 Details: Login with Password button found and clicked successfully
+16:39:02.223 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+16:39:02.224 -    📋 Details: Password entered and sign in button clicked successfully
+16:39:04.971 - ✅ STEP VALIDATION: Check home page - SUCCESS
+16:39:04.972 -    📋 Details: Home page displayed with Activity Streak: Activity Streak
+0 Week Streak
+Mon
+Tue
+Wed
+Thu
+Fri
+Sat
+Sun
+16:39:04.973 - === TEST COMPLETED: Successful Login - PASSED ===
+16:39:11.996 - === STARTING TEST: Invalid Email Login ===
+16:39:17.537 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+16:39:17.543 -    📋 Details: Element found and clicked successfully
+16:39:21.452 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+16:39:21.454 -    📋 Details: Button found and clicked successfully
+16:39:24.535 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+16:39:24.538 -    📋 Details: Both elements found and clicked successfully
+16:39:29.641 - ✅ STEP 4/6: Enter INVALID email and click 'Sign in' - SUCCESS
+16:39:29.642 -    📋 Details: Invalid email entered and sign in button clicked successfully
+16:39:32.937 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+16:39:32.941 -    📋 Details: Login with Password button found and clicked successfully
+16:39:36.244 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+16:39:36.248 -    📋 Details: Password entered and sign in button clicked successfully
+16:39:36.339 - ✅ STEP VALIDATION: Check error message - SUCCESS
+16:39:36.341 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+16:39:36.344 - === TEST COMPLETED: Invalid Email Login - PASSED ===
+16:39:41.943 - === STARTING TEST: Invalid Password Login ===
+16:39:47.435 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+16:39:47.437 -    📋 Details: Element found and clicked successfully
+16:39:50.917 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+16:39:50.921 -    📋 Details: Button found and clicked successfully
+16:39:53.985 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+16:39:53.989 -    📋 Details: Both elements found and clicked successfully
+16:39:58.495 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+16:39:58.495 -    📋 Details: Email entered and sign in button clicked successfully
+16:40:01.761 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+16:40:01.763 -    📋 Details: Login with Password button found and clicked successfully
+16:40:05.951 - ✅ STEP 6/6: Enter INVALID password and click 'Sign in' - SUCCESS
+16:40:05.953 -    📋 Details: Invalid password entered and sign in button clicked successfully
+16:40:26.007 - ❌ STEP VALIDATION: Check error message - FAILED
+16:40:26.008 -    🔍 Error Details: Error: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [b331c27a-518b-4369-8014-e9fb20bfb159, findElement {using=xpath, value=//android.view.View[@content-desc="The supplied auth credential is incorrect, malformed or has expired."]}]
+Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: b331c27a-518b-4369-8014-e9fb20bfb159
+16:40:36.507 - === STARTING TEST: Successful Login ===
+16:41:17.700 - ❌ STEP 1/6: Click 'Tap to Start' - FAILED
+16:41:17.705 -    🔍 Error Details: Error: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2e6b0882-f24d-4d7b-bc55-ae578b442306, findElement {using=xpath, value=//android.widget.ImageView[contains(@content-desc, 'Tap to Start')]}]
+Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2e6b0882-f24d-4d7b-bc55-ae578b442306
+16:44:23.417 - === STARTING TEST: Successful Login ===
+16:44:29.861 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+16:44:29.862 -    📋 Details: Element found and clicked successfully
+16:44:34.380 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+16:44:34.381 -    📋 Details: Button found and clicked successfully
+16:44:37.427 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+16:44:37.428 -    📋 Details: Both elements found and clicked successfully
+16:44:42.394 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+16:44:42.396 -    📋 Details: Email entered and sign in button clicked successfully
+16:44:49.957 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+16:44:49.959 -    📋 Details: Login with Password button found and clicked successfully
+16:44:53.677 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+16:44:53.679 -    📋 Details: Password entered and sign in button clicked successfully
+16:44:55.495 - ✅ STEP VALIDATION: Check home page - SUCCESS
+16:44:55.495 -    📋 Details: Home page displayed with Activity Streak: Activity Streak
+0 Week Streak
+Mon
+Tue
+Wed
+Thu
+Fri
+Sat
+Sun
+16:44:55.496 - === TEST COMPLETED: Successful Login - PASSED ===
+16:45:10.039 - === STARTING TEST: Invalid Email Login ===
+16:45:15.759 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+16:45:15.761 -    📋 Details: Element found and clicked successfully
+16:45:18.394 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+16:45:18.396 -    📋 Details: Button found and clicked successfully
+16:45:21.575 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+16:45:21.576 -    📋 Details: Both elements found and clicked successfully
+16:45:26.021 - ✅ STEP 4/6: Enter INVALID email and click 'Sign in' - SUCCESS
+16:45:26.022 -    📋 Details: Invalid email entered and sign in button clicked successfully
+16:45:29.270 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+16:45:29.271 -    📋 Details: Login with Password button found and clicked successfully
+16:45:33.432 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+16:45:33.434 -    📋 Details: Password entered and sign in button clicked successfully
+16:45:33.495 - ✅ STEP VALIDATION: Check error message - SUCCESS
+16:45:33.495 -    📋 Details: Error message displayed correctly: The supplied auth credential is incorrect, malformed or has expired.
+16:45:33.496 - === TEST COMPLETED: Invalid Email Login - PASSED ===
+16:45:47.991 - === STARTING TEST: Invalid Password Login ===
+16:45:53.810 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+16:45:53.811 -    📋 Details: Element found and clicked successfully
+16:45:56.412 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+16:45:56.413 -    📋 Details: Button found and clicked successfully
+16:46:16.481 - ❌ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - FAILED
+16:46:16.482 -    🔍 Error Details: Error: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.2', java.version: '24.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [a4de680b-e145-44a6-a945-1922ad53b4e6, findElement {using=xpath, value=//*[@content-desc="Saw an advertisement"]}]
+Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: a4de680b-e145-44a6-a945-1922ad53b4e6
+16:46:35.983 - === STARTING TEST: Successful Login ===
+16:46:42.790 - ✅ STEP 1/6: Click 'Tap to Start' - SUCCESS
+16:46:42.791 -    📋 Details: Element found and clicked successfully
+16:46:47.333 - ✅ STEP 2/6: Click button on second screen - SUCCESS
+16:46:47.333 -    📋 Details: Button found and clicked successfully
+16:46:50.552 - ✅ STEP 3/6: Select 'Saw an advertisement' and click 'Continue' - SUCCESS
+16:46:50.553 -    📋 Details: Both elements found and clicked successfully
+16:46:55.528 - ✅ STEP 4/6: Enter email and click 'Sign in' - SUCCESS
+16:46:55.528 -    📋 Details: Email entered and sign in button clicked successfully
+16:46:58.773 - ✅ STEP 5/6: Click 'Login with Password' - SUCCESS
+16:46:58.774 -    📋 Details: Login with Password button found and clicked successfully
+16:47:02.049 - ✅ STEP 6/6: Enter password and click 'Sign in' - SUCCESS
+16:47:02.050 -    📋 Details: Password entered and sign in button clicked successfully
+16:47:04.293 - ✅ STEP VALIDATION: Check home page - SUCCESS
+16:47:04.294 -    📋 Details: Home page displayed with Activity Streak: Activity Streak
+0 Week Streak
+Mon
+Tue
+Wed
+Thu
+Fri
+Sat
+Sun
+16:47:04.295 - === TEST COMPLETED: Successful Login - PASSED ===

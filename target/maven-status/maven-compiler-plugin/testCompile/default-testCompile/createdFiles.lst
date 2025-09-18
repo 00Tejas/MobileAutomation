@@ -1,5 +1,5 @@
-tests/LoginTest.class
+pages/HomePage.class
 pages/BasePage.class
+utils/TestLogger.class
 tests/BaseTest.class
 utils/TestReport.class
-pages/LoginPage.class

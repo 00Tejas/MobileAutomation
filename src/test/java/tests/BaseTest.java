@@ -35,12 +35,8 @@ public class BaseTest extends BasePage {
      * - It's like "opening the app" before testing
      */
     public void setupTest() throws Exception {
-        System.out.println("🔧 Setting up test...");
-        
         // 🚀 SETUP DRIVER: Start the app and prepare for testing
         setupDriver();
-        
-        System.out.println("✅ Test setup completed!");
     }
     
     /**
@@ -60,12 +56,8 @@ public class BaseTest extends BasePage {
      * - This is the method you'll use most often
      */
     public void setupTestWithReset() throws Exception {
-        System.out.println("🔧 Setting up test with app reset...");
-        
         // 🔄 SETUP WITH RESET: Start fresh from onboarding screen
         setupDriverWithReset();
-        
-        System.out.println("✅ Test setup with reset completed!");
     }
     
     /**
@@ -85,11 +77,7 @@ public class BaseTest extends BasePage {
      * - You can modify it to close the app if needed
      */
     public void cleanupTest() {
-        System.out.println("🧹 Cleaning up test...");
-        
         // 🧹 CLEANUP: Close driver and clean up resources
         cleanup();
-        
-        System.out.println("✅ Test cleanup completed!");
     }
 }

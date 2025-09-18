@@ -44,8 +44,6 @@ public class HomePage extends BasePage {
      */
     public boolean verifyHomePageLoaded() {
         try {
-            System.out.println("🔍 Verifying home page is loaded...");
-            
             // Wait for home page elements to load
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             
@@ -62,11 +60,9 @@ public class HomePage extends BasePage {
                 		+ "Sun\"]")
             ));
             
-            System.out.println("✅ Home page loaded successfully!");
             return true;
             
         } catch (Exception e) {
-            System.out.println("❌ Home page verification failed: " + e.getMessage());
             return false;
         }
     }
@@ -95,10 +91,8 @@ public class HomePage extends BasePage {
             		+ "Sat\n"
             		+ "Sun\"]"));
             String streakText = activityStreak.getText();
-            System.out.println("📊 Activity Streak Text: " + streakText);
             return streakText;
         } catch (Exception e) {
-            System.out.println("⚠️ Could not get Activity Streak text: " + e.getMessage());
             return "";
         }
     }
@@ -110,7 +104,6 @@ public class HomePage extends BasePage {
     public void validateAppBar() {
         // TODO: App bar xpath not available - commented out for now
         // driver.findElement(By.xpath("//*[@content-desc='App Bar']"));
-        System.out.println("⚠️ App Bar validation skipped - xpath not available");
     }
     
     /**
@@ -152,9 +145,8 @@ public class HomePage extends BasePage {
         try {
             // Use Appium Java client's scroll method with proper JSON format
             driver.executeScript("mobile: scrollGesture", "direction", "down", "percent", 0.5);
-            System.out.println("📜 Scrolled down successfully using Appium scrollGesture");
         } catch (Exception e) {
-            System.out.println("⚠️ Scroll failed: " + e.getMessage());
+            // Scroll failed - continue without error
         }
     }
     
@@ -164,7 +156,6 @@ public class HomePage extends BasePage {
      */
     public void validateFeedbackPopup() {
         // Try to find feedback popup (may not always be visible)
-        System.out.println("🔍 Looking for feedback popup...");
         driver.findElement(By.xpath("//android.view.View[@content-desc=\"Enjoying Prodigy Baby?\"]"));
     }
     

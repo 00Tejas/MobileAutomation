@@ -1,7 +1,7 @@
 package tests;
 
 import pages.LoginPage;
-import utils.TestReport;
+// import utils.TestReport;  // Using fully qualified name instead
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -47,8 +47,6 @@ public class LoginTest extends BaseTest {
      */
     @BeforeMethod
     public void setUp() throws Exception {
-        System.out.println("🔧 Setting up Login Test...");
-        
         // 🔄 RESET APP: Start fresh from onboarding screen
         // This ensures each test starts from the beginning
         setupTestWithReset(); 
@@ -56,8 +54,6 @@ public class LoginTest extends BaseTest {
         // 📱 CREATE PAGE OBJECT: Pass the driver to LoginPage
         // This is how Page Object Model works - test creates page, page uses driver
         loginPage = new LoginPage(getDriver()); 
-        
-        System.out.println("✅ Login Test setup completed!");
     }
 
     /**
@@ -77,15 +73,13 @@ public class LoginTest extends BaseTest {
      */
     @Test(priority = 1, description = "Test successful login with valid credentials")
     public void testSuccessfulLogin() throws Exception {
-        System.out.println("🧪 TEST CASE 1: SUCCESSFUL LOGIN - STARTING");
-        
         try {
             // 🚀 EXECUTE LOGIN: Call the complete login flow from LoginPage
             // This method contains all 6 steps: Tap to Start → Button → Advertisement → Email → Password → Validation
             loginPage.completeLoginFlow();
             
             // 📊 RECORD SUCCESS: Add this test result to the report
-            TestReport.addTestResult(
+            utils.TestReport.addTestResult(
                 "Successful Login",           // Test name
                 "PASSED",                     // Status
                 "User should reach home page with 'Activity Streak' text",  // Expected result
@@ -93,11 +87,9 @@ public class LoginTest extends BaseTest {
                 null                          // No error message
             );
             
-            System.out.println("✅ TEST CASE 1: SUCCESSFUL LOGIN - PASSED");
-            
         } catch (Exception e) {
             // 📊 RECORD FAILURE: Add this test result to the report
-            TestReport.addTestResult(
+            utils.TestReport.addTestResult(
                 "Successful Login",           // Test name
                 "FAILED",                     // Status
                 "User should reach home page with 'Activity Streak' text",  // Expected result
@@ -105,7 +97,6 @@ public class LoginTest extends BaseTest {
                 e.getMessage()                // Error message
             );
             
-            System.out.println("❌ TEST CASE 1: SUCCESSFUL LOGIN - FAILED: " + e.getMessage());
             throw e; // Re-throw to mark test as failed
         }
     }
@@ -127,15 +118,13 @@ public class LoginTest extends BaseTest {
      */
     @Test(priority = 2, description = "Test login with invalid email address")
     public void testLoginWithInvalidEmail() throws Exception {
-        System.out.println("🧪 TEST CASE 2: INVALID EMAIL LOGIN - STARTING");
-        
         try {
             // 🚀 EXECUTE LOGIN WITH INVALID EMAIL: Call the invalid email flow
             // This method does the same 6 steps but uses "invalid@email.com"
             loginPage.completeLoginFlowWithInvalidEmail();
             
             // 📊 RECORD SUCCESS: Test passed - error message was shown correctly
-            TestReport.addTestResult(
+            utils.TestReport.addTestResult(
                 "Invalid Email Login",        // Test name
                 "PASSED",                     // Status
                 "App should show error message for invalid email",  // Expected result
@@ -143,11 +132,9 @@ public class LoginTest extends BaseTest {
                 null                          // No error message
             );
             
-            System.out.println("✅ TEST CASE 2: INVALID EMAIL LOGIN - PASSED");
-            
         } catch (Exception e) {
             // 📊 RECORD FAILURE: Test failed - error message was not shown
-            TestReport.addTestResult(
+            utils.TestReport.addTestResult(
                 "Invalid Email Login",        // Test name
                 "FAILED",                     // Status
                 "App should show error message for invalid email",  // Expected result
@@ -155,7 +142,6 @@ public class LoginTest extends BaseTest {
                 e.getMessage()                // Error message
             );
             
-            System.out.println("❌ TEST CASE 2: INVALID EMAIL LOGIN - FAILED: " + e.getMessage());
             throw e; // Re-throw to mark test as failed
         }
     }
@@ -177,15 +163,13 @@ public class LoginTest extends BaseTest {
      */
     @Test(priority = 3, description = "Test login with invalid password")
     public void testLoginWithInvalidPassword() throws Exception {
-        System.out.println("🧪 TEST CASE 3: INVALID PASSWORD LOGIN - STARTING");
-        
         try {
             // 🚀 EXECUTE LOGIN WITH INVALID PASSWORD: Call the invalid password flow
             // This method does the same 6 steps but uses "wrongpassword"
             loginPage.completeLoginFlowWithInvalidPassword();
             
             // 📊 RECORD SUCCESS: Test passed - error message was shown correctly
-            TestReport.addTestResult(
+            utils.TestReport.addTestResult(
                 "Invalid Password Login",     // Test name
                 "PASSED",                     // Status
                 "App should show error message for invalid password",  // Expected result
@@ -193,11 +177,9 @@ public class LoginTest extends BaseTest {
                 null                          // No error message
             );
             
-            System.out.println("✅ TEST CASE 3: INVALID PASSWORD LOGIN - PASSED");
-            
         } catch (Exception e) {
             // 📊 RECORD FAILURE: Test failed - error message was not shown
-            TestReport.addTestResult(
+            utils.TestReport.addTestResult(
                 "Invalid Password Login",     // Test name
                 "FAILED",                     // Status
                 "App should show error message for invalid password",  // Expected result
@@ -205,7 +187,6 @@ public class LoginTest extends BaseTest {
                 e.getMessage()                // Error message
             );
             
-            System.out.println("❌ TEST CASE 3: INVALID PASSWORD LOGIN - FAILED: " + e.getMessage());
             throw e; // Re-throw to mark test as failed
         }
     }
@@ -226,12 +207,22 @@ public class LoginTest extends BaseTest {
      */
     @AfterMethod
     public void tearDown() {
-        System.out.println("🧹 Cleaning up Login Test...");
-        
-        // 🧹 CLEANUP: Close driver and reset app state
-        cleanupTest();
-        
-        System.out.println("✅ Login Test cleanup completed!");
+        try {
+            // 🧹 CLEANUP: Close driver and reset app state
+            cleanupTest();
+            
+            // ⏱️ DYNAMIC WAIT: Wait for app to fully close before next test
+            Thread.sleep(3000); // Wait 3 seconds for app to fully close
+            
+            // 🔄 ADDITIONAL RESET: Ensure app is completely reset
+            resetAppData();
+            
+            // ⏱️ DYNAMIC WAIT: Wait for reset to complete
+            Thread.sleep(2000); // Wait 2 seconds for reset to complete
+            
+        } catch (Exception e) {
+            // Continue even if cleanup fails
+        }
     }
     
     /**
@@ -251,11 +242,7 @@ public class LoginTest extends BaseTest {
      */
     @AfterSuite
     public void generateTestReport() {
-        System.out.println("📊 Generating test report...");
-        
         // 📊 GENERATE REPORT: Create Excel file with all test results
-        TestReport.generateReport();
-        
-        System.out.println("📋 Report ready! Copy content to Google Docs for sharing.");
+        utils.TestReport.generateReport();
     }
 }
