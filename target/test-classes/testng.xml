@@ -5,14 +5,14 @@
     <!-- Login Test Suite - All scenarios in one class -->
     <test name="Login Test Suite">
         <classes>
-            <class name="tests.LoginTest"/>
+            <class name="com.mobile.automation.tests.LoginTest"/>
         </classes>
     </test>
     
     <!-- Home Page Test Suite - Home page functionality tests -->
     <test name="Home Page Test Suite">
         <classes>
-            <class name="tests.HomePageTest"/>
+            <class name="com.mobile.automation.tests.HomePageTest"/>
         </classes>
     </test>
     

@@ -1,5 +1,8 @@
-pages/HomePage.class
-pages/BasePage.class
-utils/TestLogger.class
-tests/BaseTest.class
-utils/TestReport.class
+com/mobile/automation/utils/TestReport.class
+com/mobile/automation/utils/TestLogger.class
+com/mobile/automation/tests/LoginTest.class
+com/mobile/automation/tests/BaseTest.class
+com/mobile/automation/pages/BasePage.class
+com/mobile/automation/pages/HomePage.class
+com/mobile/automation/pages/LoginPage.class
+com/mobile/automation/tests/HomePageTest.class

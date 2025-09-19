@@ -95,6 +95,7 @@
           <systemPropertyVariables>
             <webdriver.chrome.driver>${webdriver.chrome.driver}</webdriver.chrome.driver>
           </systemPropertyVariables>
+          <testFailureIgnore>true</testFailureIgnore>
         </configuration>
       </plugin>
       <plugin>

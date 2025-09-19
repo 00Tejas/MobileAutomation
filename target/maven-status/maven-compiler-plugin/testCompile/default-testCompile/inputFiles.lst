@@ -1,8 +1,8 @@
-/Users/abcom/eclipse-workspace/MobileAutomationFramework/src/test/java/pages/BasePage.java
-/Users/abcom/eclipse-workspace/MobileAutomationFramework/src/test/java/pages/HomePage.java
-/Users/abcom/eclipse-workspace/MobileAutomationFramework/src/test/java/pages/LoginPage.java
-/Users/abcom/eclipse-workspace/MobileAutomationFramework/src/test/java/tests/BaseTest.java
-/Users/abcom/eclipse-workspace/MobileAutomationFramework/src/test/java/tests/HomePageTest.java
-/Users/abcom/eclipse-workspace/MobileAutomationFramework/src/test/java/tests/LoginTest.java
-/Users/abcom/eclipse-workspace/MobileAutomationFramework/src/test/java/utils/TestLogger.java
-/Users/abcom/eclipse-workspace/MobileAutomationFramework/src/test/java/utils/TestReport.java
+/Users/abcom/Documents/projects/MobileAutomationFramework/src/test/java/com/mobile/automation/pages/BasePage.java
+/Users/abcom/Documents/projects/MobileAutomationFramework/src/test/java/com/mobile/automation/pages/HomePage.java
+/Users/abcom/Documents/projects/MobileAutomationFramework/src/test/java/com/mobile/automation/pages/LoginPage.java
+/Users/abcom/Documents/projects/MobileAutomationFramework/src/test/java/com/mobile/automation/tests/BaseTest.java
+/Users/abcom/Documents/projects/MobileAutomationFramework/src/test/java/com/mobile/automation/tests/HomePageTest.java
+/Users/abcom/Documents/projects/MobileAutomationFramework/src/test/java/com/mobile/automation/tests/LoginTest.java
+/Users/abcom/Documents/projects/MobileAutomationFramework/src/test/java/com/mobile/automation/utils/TestLogger.java
+/Users/abcom/Documents/projects/MobileAutomationFramework/src/test/java/com/mobile/automation/utils/TestReport.java

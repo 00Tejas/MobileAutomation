@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Mobile_App_Test_Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Mobile App Test Suite</span>
+              <span class="suite-name border-failed">Mobile App Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,46 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,  6 skipped,  3 passed</span>
+                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Mobile_App_Test_Suite" class="hide-methods skipped suite-Mobile_App_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-Mobile_App_Test_Suite -->
-                      <a href="#" panel-name="suite-Mobile_App_Test_Suite" class="show-methods skipped suite-Mobile_App_Test_Suite"> (show)</a> <!-- show-methods skipped suite-Mobile_App_Test_Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Mobile_App_Test_Suite" class="hide-methods failed suite-Mobile_App_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Mobile_App_Test_Suite -->
+                      <a href="#" panel-name="suite-Mobile_App_Test_Suite" class="show-methods failed suite-Mobile_App_Test_Suite"> (show)</a> <!-- show-methods failed suite-Mobile_App_Test_Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Mobile_App_Test_Suite">
+                    <div class="method-list-content failed suite-Mobile_App_Test_Suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="tests.HomePageTest" class="method navigator-link" hash-for-method="testActivityStreakElement">testActivityStreakElement</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="com.mobile.automation.tests.LoginTest" class="method navigator-link" hash-for-method="testLoginWithInvalidPassword">testLoginWithInvalidPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="tests.HomePageTest" class="method navigator-link" hash-for-method="testAppBarElement">testAppBarElement</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="tests.HomePageTest" class="method navigator-link" hash-for-method="testClaimMedalsElement">testClaimMedalsElement</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="tests.HomePageTest" class="method navigator-link" hash-for-method="testFeedbackPopupElement">testFeedbackPopupElement</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="tests.HomePageTest" class="method navigator-link" hash-for-method="testHomePageLoaded">testHomePageLoaded</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="tests.HomePageTest" class="method navigator-link" hash-for-method="testNotificationIcon">testNotificationIcon</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Mobile_App_Test_Suite -->
+                    </div> <!-- method-list-content failed suite-Mobile_App_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -142,17 +117,42 @@
                     <div class="method-list-content passed suite-Mobile_App_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLoginWithInvalidEmail">testLoginWithInvalidEmail</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="com.mobile.automation.tests.HomePageTest" class="method navigator-link" hash-for-method="testActivityStreakElement">testActivityStreakElement</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLoginWithInvalidPassword">testLoginWithInvalidPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="com.mobile.automation.tests.HomePageTest" class="method navigator-link" hash-for-method="testAppBarElement">testAppBarElement</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testSuccessfulLogin">testSuccessfulLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="com.mobile.automation.tests.HomePageTest" class="method navigator-link" hash-for-method="testClaimMedalsElement">testClaimMedalsElement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="com.mobile.automation.tests.HomePageTest" class="method navigator-link" hash-for-method="testFeedbackPopupElement">testFeedbackPopupElement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="com.mobile.automation.tests.HomePageTest" class="method navigator-link" hash-for-method="testHomePageLoaded">testHomePageLoaded</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="com.mobile.automation.tests.LoginTest" class="method navigator-link" hash-for-method="testLoginWithInvalidEmail">testLoginWithInvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="com.mobile.automation.tests.HomePageTest" class="method navigator-link" hash-for-method="testNotificationIcon">testNotificationIcon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mobile_App_Test_Suite" title="com.mobile.automation.tests.LoginTest" class="method navigator-link" hash-for-method="testSuccessfulLogin">testSuccessfulLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Mobile_App_Test_Suite -->
@@ -167,25 +167,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Mobile_App_Test_Suite" class="panel Mobile_App_Test_Suite">
-          <div class="suite-Mobile_App_Test_Suite-class-skipped">
+          <div class="suite-Mobile_App_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">tests.HomePageTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.mobile.automation.tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testActivityStreakElement">
-                  </a> <!-- testActivityStreakElement -->
-                  <span class="method-name">testActivityStreakElement</span>
+                  <a name="testLoginWithInvalidPassword">
+                  </a> <!-- testLoginWithInvalidPassword -->
+                  <span class="method-name">testLoginWithInvalidPassword</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;24.0.2&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;21.0.8&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [55412ab1-886a-4d3b-a734-ae4d9bd558a8, findElement {using=xpath, value=//android.widget.Button[@content-desc=&quot;Login with Password&quot;]}]
+Command: [8cfecfef-c8c1-4f37-82e7-1995bf7b98c7, findElement {using=xpath, value=//android.widget.EditText}]
 Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 55412ab1-886a-4d3b-a734-ae4d9bd558a8
+Session ID: 8cfecfef-c8c1-4f37-82e7-1995bf7b98c7
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -196,11 +196,28 @@ Session ID: 55412ab1-886a-4d3b-a734-ae4d9bd558a8
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at pages.LoginPage.completeLoginFlow(LoginPage.java:126)
-	at tests.HomePageTest.setUp(HomePageTest.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 30 stack frames
+	at com.mobile.automation.pages.LoginPage.completeLoginFlowWithInvalidPassword(LoginPage.java:317)
+	at com.mobile.automation.tests.LoginTest.testLoginWithInvalidPassword(LoginTest.java:169)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
+                  <em>
+(Test login with invalid password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mobile_App_Test_Suite-class-failed -->
+          <div class="suite-Mobile_App_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mobile.automation.tests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testActivityStreakElement">
+                  </a> <!-- testActivityStreakElement -->
+                  <span class="method-name">testActivityStreakElement</span>
                   <em>
 (Test activity streak element)                  </em>
                 </div> <!-- method-content -->
@@ -210,29 +227,6 @@ Session ID: 55412ab1-886a-4d3b-a734-ae4d9bd558a8
                   <a name="testAppBarElement">
                   </a> <!-- testAppBarElement -->
                   <span class="method-name">testAppBarElement</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;24.0.2&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [55412ab1-886a-4d3b-a734-ae4d9bd558a8, findElement {using=xpath, value=//android.widget.Button[@content-desc=&quot;Login with Password&quot;]}]
-Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 55412ab1-886a-4d3b-a734-ae4d9bd558a8
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at pages.LoginPage.completeLoginFlow(LoginPage.java:126)
-	at tests.HomePageTest.setUp(HomePageTest.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Test app bar element - SKIPPED)                  </em>
                 </div> <!-- method-content -->
@@ -242,29 +236,6 @@ Session ID: 55412ab1-886a-4d3b-a734-ae4d9bd558a8
                   <a name="testClaimMedalsElement">
                   </a> <!-- testClaimMedalsElement -->
                   <span class="method-name">testClaimMedalsElement</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;24.0.2&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [55412ab1-886a-4d3b-a734-ae4d9bd558a8, findElement {using=xpath, value=//android.widget.Button[@content-desc=&quot;Login with Password&quot;]}]
-Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 55412ab1-886a-4d3b-a734-ae4d9bd558a8
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at pages.LoginPage.completeLoginFlow(LoginPage.java:126)
-	at tests.HomePageTest.setUp(HomePageTest.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Test claim medals element)                  </em>
                 </div> <!-- method-content -->
@@ -274,29 +245,6 @@ Session ID: 55412ab1-886a-4d3b-a734-ae4d9bd558a8
                   <a name="testFeedbackPopupElement">
                   </a> <!-- testFeedbackPopupElement -->
                   <span class="method-name">testFeedbackPopupElement</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;24.0.2&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [55412ab1-886a-4d3b-a734-ae4d9bd558a8, findElement {using=xpath, value=//android.widget.Button[@content-desc=&quot;Login with Password&quot;]}]
-Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 55412ab1-886a-4d3b-a734-ae4d9bd558a8
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at pages.LoginPage.completeLoginFlow(LoginPage.java:126)
-	at tests.HomePageTest.setUp(HomePageTest.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Test feedback popup element - OPTIONAL)                  </em>
                 </div> <!-- method-content -->
@@ -306,29 +254,6 @@ Session ID: 55412ab1-886a-4d3b-a734-ae4d9bd558a8
                   <a name="testHomePageLoaded">
                   </a> <!-- testHomePageLoaded -->
                   <span class="method-name">testHomePageLoaded</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;24.0.2&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [55412ab1-886a-4d3b-a734-ae4d9bd558a8, findElement {using=xpath, value=//android.widget.Button[@content-desc=&quot;Login with Password&quot;]}]
-Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 55412ab1-886a-4d3b-a734-ae4d9bd558a8
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at pages.LoginPage.completeLoginFlow(LoginPage.java:126)
-	at tests.HomePageTest.setUp(HomePageTest.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Test home page loads correctly)                  </em>
                 </div> <!-- method-content -->
@@ -338,39 +263,16 @@ Session ID: 55412ab1-886a-4d3b-a734-ae4d9bd558a8
                   <a name="testNotificationIcon">
                   </a> <!-- testNotificationIcon -->
                   <span class="method-name">testNotificationIcon</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;24.0.2&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [55412ab1-886a-4d3b-a734-ae4d9bd558a8, findElement {using=xpath, value=//android.widget.Button[@content-desc=&quot;Login with Password&quot;]}]
-Capabilities {appium:appActivity: com.raising.prodigy.MainAct..., appium:appPackage: com.raising.prodigy, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.raising.prodigy.MainAct..., appPackage: com.raising.prodigy, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 16}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 55412ab1-886a-4d3b-a734-ae4d9bd558a8
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at pages.LoginPage.completeLoginFlow(LoginPage.java:126)
-	at tests.HomePageTest.setUp(HomePageTest.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Test notification icon)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Mobile_App_Test_Suite-class-skipped -->
+          </div> <!-- suite-Mobile_App_Test_Suite-class-passed -->
           <div class="suite-Mobile_App_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.LoginTest</span>
+              <span class="class-name">com.mobile.automation.tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -380,15 +282,6 @@ Session ID: 55412ab1-886a-4d3b-a734-ae4d9bd558a8
                   <span class="method-name">testLoginWithInvalidEmail</span>
                   <em>
 (Test login with invalid email address)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLoginWithInvalidPassword">
-                  </a> <!-- testLoginWithInvalidPassword -->
-                  <span class="method-name">testLoginWithInvalidPassword</span>
-                  <em>
-(Test login with invalid password)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -405,7 +298,7 @@ Session ID: 55412ab1-886a-4d3b-a734-ae4d9bd558a8
         </div> <!-- panel Mobile_App_Test_Suite -->
         <div panel-name="test-xml-Mobile_App_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/abcom/eclipse-workspace/MobileAutomationFramework/src/test/resources/testng.xml</span>
+            <span class="header-content">/Users/abcom/Documents/projects/MobileAutomationFramework/src/test/resources/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -414,12 +307,12 @@ Session ID: 55412ab1-886a-4d3b-a734-ae4d9bd558a8
 &lt;suite name=&quot;Mobile App Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Login Test Suite&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.mobile.automation.tests.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Login Test Suite --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Home Page Test Suite&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.mobile.automation.tests.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Home Page Test Suite --&gt;
 &lt;/suite&gt; &lt;!-- Mobile App Test Suite --&gt;
@@ -464,41 +357,41 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testSuccessfulLogin')
-data.setCell(0, 2, 'tests.LoginTest')
-data.setCell(0, 3, 41959);
+data.setCell(0, 1, 'testLoginWithInvalidPassword')
+data.setCell(0, 2, 'com.mobile.automation.tests.LoginTest')
+data.setCell(0, 3, 33601);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testLoginWithInvalidPassword')
-data.setCell(1, 2, 'tests.LoginTest')
-data.setCell(1, 3, 19418);
+data.setCell(1, 1, 'testSuccessfulLogin')
+data.setCell(1, 2, 'com.mobile.automation.tests.LoginTest')
+data.setCell(1, 3, 30333);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testLoginWithInvalidEmail')
-data.setCell(2, 2, 'tests.LoginTest')
-data.setCell(2, 3, 17968);
+data.setCell(2, 1, 'testFeedbackPopupElement')
+data.setCell(2, 2, 'com.mobile.automation.tests.HomePageTest')
+data.setCell(2, 3, 20073);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testHomePageLoaded')
-data.setCell(3, 2, 'tests.HomePageTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'testLoginWithInvalidEmail')
+data.setCell(3, 2, 'com.mobile.automation.tests.LoginTest')
+data.setCell(3, 3, 18523);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testNotificationIcon')
-data.setCell(4, 2, 'tests.HomePageTest')
-data.setCell(4, 3, 0);
+data.setCell(4, 1, 'testHomePageLoaded')
+data.setCell(4, 2, 'com.mobile.automation.tests.HomePageTest')
+data.setCell(4, 3, 95);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testActivityStreakElement')
-data.setCell(5, 2, 'tests.HomePageTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 1, 'testNotificationIcon')
+data.setCell(5, 2, 'com.mobile.automation.tests.HomePageTest')
+data.setCell(5, 3, 38);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testClaimMedalsElement')
-data.setCell(6, 2, 'tests.HomePageTest')
-data.setCell(6, 3, 0);
+data.setCell(6, 1, 'testActivityStreakElement')
+data.setCell(6, 2, 'com.mobile.automation.tests.HomePageTest')
+data.setCell(6, 3, 37);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testFeedbackPopupElement')
-data.setCell(7, 2, 'tests.HomePageTest')
-data.setCell(7, 3, 0);
+data.setCell(7, 1, 'testClaimMedalsElement')
+data.setCell(7, 2, 'com.mobile.automation.tests.HomePageTest')
+data.setCell(7, 3, 30);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'testAppBarElement')
-data.setCell(8, 2, 'tests.HomePageTest')
-data.setCell(8, 3, 0);
+data.setCell(8, 2, 'com.mobile.automation.tests.HomePageTest')
+data.setCell(8, 3, 2);
 window.suiteTableData['Mobile_App_Test_Suite']= { tableData: data, tableDiv: 'times-div-Mobile_App_Test_Suite'}
 return data;
 }
@@ -529,58 +422,86 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.mobile.automation.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSuccessfulLogin</span>
-                <span class="method-start">20415 ms</span>
+                <span class="method-start">10329 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">62377 ms</span>
+                <span class="method-start">40688 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">79789 ms</span>
+                <span class="method-start">45774 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginWithInvalidEmail</span>
-                <span class="method-start">100461 ms</span>
+                <span class="method-start">54400 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">118433 ms</span>
+                <span class="method-start">72931 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">135856 ms</span>
+                <span class="method-start">77996 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testLoginWithInvalidPassword</span>
-                <span class="method-start">156492 ms</span>
+                <span class="method-start">86338 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">175910 ms</span>
+                <span class="method-start">119958 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.mobile.automation.tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp</span>
-                <span class="method-start">198221 ms</span>
+                <span class="method-start">130256 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testHomePageLoaded</span>
+                <span class="method-start">159209 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAppBarElement</span>
+                <span class="method-start">159307 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNotificationIcon</span>
+                <span class="method-start">159312 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testActivityStreakElement</span>
+                <span class="method-start">159352 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testClaimMedalsElement</span>
+                <span class="method-start">159392 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFeedbackPopupElement</span>
+                <span class="method-start">159423 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">179502 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.mobile.automation.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">generateTestReport</span>
-                <span class="method-start">275541 ms</span>
+                <span class="method-start">189597 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
